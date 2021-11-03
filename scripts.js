@@ -1,4 +1,3 @@
-alert ("cargado");
 
 /*
 function valida_envia(){
