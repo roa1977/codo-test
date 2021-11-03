@@ -27,6 +27,20 @@ body {
 	border: 1px solid #999;
 	/*padding-top: 3%;*/
 }
+
+#contenedor-form {
+	display: table;
+	height: 100%;
+	width: 80%;
+	background-color: #FFF;
+	border-radius:10px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	border: 1px solid #999;
+	/*padding-top: 3%;*/
+}
+
 #banner {
 	background-image: url(portada.jpg);
 	background-repeat: no-repeat;
@@ -182,7 +196,7 @@ body {
 
 .map-responsive{
     overflow:hidden;
-    padding-bottom:56.25%;
+    padding-bottom:40%;
     position:relative;
     height:0;
 	align-content: center;
@@ -191,7 +205,7 @@ body {
 .map-responsive iframe{
     left:0;
     top:0;
-    height:80%;
+    height:50%;
     width:80%;
     position:absolute;
 }
