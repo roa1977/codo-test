@@ -1,13 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>::: Desarrollos Web :::</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+
+  <link href="estilos.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+
+  <script language=javascript src=scripts.js></script>
+
 </head>
+
 <body>
-    <p>esta es una prueba</p>
-    <p>de git</p>
+<!-- 
+caracteristicas Semantica
+cabecera..............> <header> </header>
+navegacionlocal.......> <nav> <ul> <li> </li>  </lu> </nav> solo  para navegacion del sitio.
+division .............> <section> </section>
+texto.................> <article> </article>
+imagen................> <figure> </figure>
+texto - jerarquia.....> <aside> </aside>  si  es un dispocitivo  movil se corta.
+pie...................> <footer> </footer>
+datos de contacto.....> <adress> </adress>  puede estar  dentro  del footer
+Caracteristicas Multimedia
+videos  sin flash..........> <video> </video>
+formatos de videos.........> <source> </source>
+audio......................> <audio> </audio>
+animacionescss.............> <canvas> </canvas> se usa con javascripts
+
+-->
+<div id="contenedor">
+
+  <header>
+    <div id="logo">
+      <a href="index.html">
+        <img src="img/logo.jpg" width=100% height="120" /> 
+      </a>
+      <div class="centrado">Desarrollos Web</div>
+    </div>
+  </header>
+  
+  <section id="banner">
+    <div id="slogan"><span class="destacado">Ideas originales, momentos especiales…</span></div>
+  </section>
+
+  <nav id="botonera" class="botonerita">
+    <ul>
+      <li><a href="empresa.html">Nosotros</a></li>
+      <li><a href="productos.html">Hacemos</a></li>
+      <li><a href="tecnologias.html">Tecnologias</a></li>
+      <li><a href="ubicacion.html">Ubicacion</a></li>
+      <li><a href="contacto.html">Contactanos</a></li>
+    </ul>
+  </nav>
+
+  <footer id="pie"> <adress><a href="mailto:v.nao@hotmail.com">ahi te veo!</a> /tel:<a href="tel:+01145554444"> 011 4555 4444</a> / Terrada 5385 - CABA</adress></footer>
+</div>
 </body>
 </html>
