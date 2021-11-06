@@ -346,10 +346,27 @@ nav {
 	.botonerita-nav {
 	  flex-direction: column;
 	}
-  
+	.pie {
+		flex-direction: column;
+	  }
+	
 	nav ul {
 	  flex-direction: column;
 	}
   
+	.map-responsive {
+		height: 25%;
+		width: 96%;
+	}
 	
   }
+
+  /*De 0 a 400px*/
+@media all and (max-width: 1px){
+    .map-responsive{
+        flex-direction: column;
+    }
+	.box {
+		flex-direction: column;
+	}
+}
