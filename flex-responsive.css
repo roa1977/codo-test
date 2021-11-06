@@ -1,0 +1,55 @@
+.padref{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+}
+
+.izquierdaf, .derechaf {
+    flex-grow:1; /*indicamos el crecimiento de cada uno*/
+    flex-basis: 100%; /*que ocupen el 100% del viewport (en tamaño celular)*/
+    padding: 10px;
+}
+   
+.articulof{
+    flex-grow:1; /*indicamos el crecimiento de cada uno*/
+    flex-basis: 100%; /*que ocupen el 100% del viewport (en tamaño celular)*/
+    padding: 10px;
+}
+
+.articulof{background:rgba(245, 247, 248, 0.979)}
+.izquierdaf{background:rgb(120, 184, 214);}
+.derechaf{background:rgb(120, 184, 214);}
+
+
+/*Cuando tenga 800 px o más...*/
+@media all and (min-width: 800px){
+    .articulof{
+        flex: 2 0; /*articulo es 2 veces cada cuadrado izquierda o derecha*/
+    }
+    .izquierdaf{order:1;}
+    .articulof{order:2;}
+    .derechaf{order:3;}
+}
+
+/*Cuando tenga 600 px o más...*/
+@media all and (min-width: 601px){
+    .asidef{
+        flex: 1 1 auto; /*los elementos izquierda y derecha se posicionan uno al lado del otro ocupando un ancho automático*/
+    }
+}
+
+/*De 401 a 600px*/
+@media all and (max-width: 600px){
+    .articulos{
+        flex-direction: column;
+    }
+}
+
+/*De 0 a 400px*/
+@media all and (max-width: 400px){
+    .aside{
+        flex-direction: column;
+    }
+}
